@@ -1,6 +1,37 @@
+## [2.2.7](https://github.com/aws/aws-iot-device-sdk-js/releases/tag/v2.2.7) (Sep 15, 2020)
+
+Bugfixes/Improvements
+  - send SNI string while connecting to AWS IoT
+  - README warns about MacOS storing certificate in keychain
+
+## [2.2.6](https://github.com/aws/aws-iot-device-sdk-js/releases/tag/v2.2.6) (May 18, 2020)
+
+Bugfixes/Improvements
+  - Require only the necessary modules from crypto-js to optimize bundle
+
+## [2.2.5](https://github.com/aws/aws-iot-device-sdk-js/releases/tag/v2.2.5) (Apr 7, 2020)
+
+Bugfixes/Improvements
+  - Re-adding github related templates and readme change.
+
+## [2.2.4](https://github.com/aws/aws-iot-device-sdk-js/releases/tag/v2.2.4) (Mar 31, 2020)
+
+Bugfixes/Improvements
+  - Bumping minimist version to 1.2.5 to address security issue
+
+## [2.2.3](https://github.com/aws/aws-iot-device-sdk-js/releases/tag/v2.2.3) (Jan 20, 2020)
+
+Bugfixes/Improvements
+  - Upgrade MQTT.js to 3.0.0 to incorporate important bug fixes
+
+## [2.2.2](https://github.com/aws/aws-iot-device-sdk-js/releases/tag/v2.2.2) (Sep 24, 2019)
+
+Bugfixes/Improvements
+  - Reorder timeout state cleanup in order to support invoking update from a timeout callback
+
 ## [2.2.1](https://github.com/aws/aws-iot-device-sdk-js/releases/tag/v2.2.1) (Jan 24, 2018)
 
-Bugfixes/Imporovements
+Bugfixes/Improvements
   - Upgrade MQTT.js to 2.15.1 to address security issue
 
 ## [2.2.0](https://github.com/aws/aws-iot-device-sdk-js/releases/tag/v2.2.0) (Nov 29, 2017)
@@ -11,18 +42,18 @@ Features
   - Added options to enalbe/disable AWS IoT metrics collection
   - Added new API to support packetsend and packetreceive events
 
-Bugfixes/Imporovements
+Bugfixes/Improvements
   - Modify Keepalive defaults to 300 secs to maintain consistency across SDKs
   - Expose shadow version from raw json object
   - Added samples to demonstrate AWS IoT Job API
-  - Disabled MQTT.js default resubscribe. 
+  - Disabled MQTT.js default resubscribe.
 
 ## [2.1.0](https://github.com/aws/aws-iot-device-sdk-js/releases/tag/v2.0.1) (Sep 28, 2017)
 
 Features
   - Update MQTT.js to 2.13.0. [MQTT.js](https://github.com/mqttjs/MQTT.js/releases/tag/v2.13.0)
 
-Bugfixes/Imporovements
+Bugfixes/Improvements
   - Propagated 'error' from 'close' event. [#131](https://github.com/aws/aws-iot-device-sdk-js/pull/131)
   - Fixed method of handleMessage to be overridden rather than pass-through. [#129](https://github.com/aws/aws-iot-device-sdk-js/pull/129)
   - Pass 'connack' parameter in 'connect' event  [#99](https://github.com/aws/aws-iot-device-sdk-js/pull/99)
@@ -30,25 +61,25 @@ Bugfixes/Imporovements
 
 ## [2.0.1](https://github.com/aws/aws-iot-device-sdk-js/releases/tag/v2.0.1) (Jul 2, 2017)
 
-Bugfixes/Imporovements
+Bugfixes/Improvements
   - Removed validation against .com in websocket connection.
 
 ## [2.0.0](https://github.com/aws/aws-iot-device-sdk-js/releases/tag/v2.0.0) (Mar 21, 2017)
 
 API Changes
   - Deprecated region option(-g) in device configuration.
-  - Added host endpoint option(-H) to connect to custom host endpoint 
+  - Added host endpoint option(-H) to connect to custom host endpoint
 
 Features
   - Added support for browserify on Windows CMD. [#74](https://github.com/aws/aws-iot-device-sdk-js/issues/74)
   - Added support for loading IAM credentials from aws credential files.
   - Added sample for using Node.js SDK with webpack.
 
-Bugfixes/Imporovements
+Bugfixes/Improvements
   - Fixed README.md typo [#101](https://github.com/aws/aws-iot-device-sdk-js/issues/101)
-  - Fixed thing.register() API to have independent optional parameters.[#106](https://github.com/aws/aws-iot-device-sdk-js/issues/106) 
-  - Upgrade MQTT.js to v2.2.1 and gulp dependencies. 
-  - Fixed npm test failure in node version above 4. 
+  - Fixed thing.register() API to have independent optional parameters.[#106](https://github.com/aws/aws-iot-device-sdk-js/issues/106)
+  - Upgrade MQTT.js to v2.2.1 and gulp dependencies.
+  - Fixed npm test failure in node version above 4.
 
 ## [1.0.14](https://github.com/aws/aws-iot-device-sdk-js/releases/tag/v1.0.14) (Dec 7, 2016)
 
